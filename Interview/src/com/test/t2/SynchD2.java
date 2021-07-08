@@ -6,7 +6,7 @@ public class SynchD2 {
     public static void main(String[] args) {
 
         // int[] abc = { 1, 0, 1, 0, 1, 0, 1 };
-        int[] abc = { 1, 0, 1, 2, 4, 0, 1, 0, 1, 3 };
+        int[] abc = { 1, 0, 1, 0, 1, 0, 1 };
 
         // for (int i = 0; i < abc.length - 1; i++) {
         // for (int j = i + 1; j < abc.length; j++) {

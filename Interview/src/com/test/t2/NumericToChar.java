@@ -1,5 +1,7 @@
 package com.test.t2;
 
+//i/p->a4k3b2
+//o/p->aeknbd
 public class NumericToChar {
 
     public static void main(String[] args) {
@@ -21,6 +23,3 @@ public class NumericToChar {
     }
 
 }
-
-// i/p->a4k3b2
-// o/p->aeknbd
