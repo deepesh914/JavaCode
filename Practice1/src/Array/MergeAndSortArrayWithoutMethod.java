@@ -5,8 +5,8 @@ public class MergeAndSortArrayWithoutMethod {
 
     public static void main(String[] args) {
 
-        int[] a = new int[] { 2, 4, 6, 7, 0 };
-        int[] b = new int[] { 1, 3, 5, 8, 9 };
+        int[] a = { 2, 4, 6, 7, 0 };
+        int[] b = { 1, 3, 5, 8, 9 };
         int[] c = new int[a.length + b.length];
         int count = 0;
 
