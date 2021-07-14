@@ -1,6 +1,7 @@
 package java8stream;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -21,6 +22,8 @@ public class ListStream {
         // multiply by 2
         List<Integer> al2 = al.stream().map(i -> i * 2).collect(Collectors.toList());
         System.out.println("multiply by 2: " + al2);
+
+        Collections.sort(al.stream().filter(i -> i % 2 == 0).collect(Collectors.toList()));
 
     }
 
