@@ -24,7 +24,7 @@ public class MinDelete {
         String str = scanner.nextLine();
         scanner.close();
         System.out.println(minStep(str));
-        // BAAABAB
+        // BAAABAB BBABAA
     }
 
 }

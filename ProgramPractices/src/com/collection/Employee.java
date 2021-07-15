@@ -5,7 +5,9 @@ package com.collection;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -95,6 +97,19 @@ public class Employee {
         System.out.println(e1.hashCode());
         System.out.println(e2.hashCode());
         System.out.println(e1.equals(e2));
+
+        // Find the salary and its count
+        HashMap<Integer, Integer> map = new HashMap<>();
+        Iterator<Employee> itr = list.listIterator();
+        while (itr.hasNext()) {
+            Employee e = itr.next();
+            if (map.containsKey(e.geteSalary())) {
+                map.put(e.geteSalary(), map.get(e.geteSalary()) + 1);
+            } else {
+                map.put(e.geteSalary(), 1);
+            }
+        }
+        System.out.println(map);
     }
 
     public String geteName() {

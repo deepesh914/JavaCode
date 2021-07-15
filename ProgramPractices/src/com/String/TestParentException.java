@@ -1,7 +1,5 @@
 package com.String;
 
-import java.io.IOException;
-
 public class TestParentException extends ParentException {
 
     public static void main(String[] args) {
@@ -10,7 +8,9 @@ public class TestParentException extends ParentException {
 
     }
 
-    public void get() {
+    @Override
+    public void get() throws ArithmeticException {
+        int i = 10 / 0;
         System.out.println("Child");
     }
 }
@@ -18,7 +18,7 @@ public class TestParentException extends ParentException {
 
 class ParentException {
 
-    public void get() throws IOException {
+    public void get() {
         System.out.println("Parent");
     }
 }

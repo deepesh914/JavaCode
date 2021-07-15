@@ -15,6 +15,7 @@ public class SmallestSubStringValue {
                     a1.add(a.substring(i, j));
             }
         }
+        System.out.println(a1);
 
         TreeMap<String, Integer> a2 = new TreeMap<>();
         for (String s : a1)
@@ -30,10 +31,12 @@ public class SmallestSubStringValue {
         for (String s : freshlist) {
             dictionary.put(s, s.length());
         }
+        System.out.println(dictionary);
 
         ArrayList<Integer> newlist = new ArrayList<>();
         for (String s : dictionary.keySet())
             newlist.add(dictionary.get(s));
+        System.out.println(newlist);
 
         Collections.sort(newlist);
         return newlist.get(0);
