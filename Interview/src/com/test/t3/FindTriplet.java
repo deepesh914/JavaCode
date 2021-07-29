@@ -1,4 +1,4 @@
-package com.Interview;
+package com.test.t3;
 
 //Java program to find a triplet 
 public class FindTriplet {
