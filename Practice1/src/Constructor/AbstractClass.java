@@ -12,6 +12,10 @@ abstract class T {
     public void m3() {
         System.out.println("m3-method");
     }
+
+    public static void m4() {
+        System.out.println("m4-static-method");
+    }
 }
 
 
@@ -51,6 +55,7 @@ public class AbstractClass {
         // U u = new U();
         T t = new U();
         t.m3();
+
     }
 }
 /*
