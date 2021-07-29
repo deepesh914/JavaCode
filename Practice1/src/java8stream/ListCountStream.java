@@ -14,7 +14,10 @@ public class ListCountStream {
         al.add("Rajeshwar");
         al.add("Rajni");
         al.add("Deepak");
-        System.out.println(al);
+        System.out.println("Full List: " + al);
+        // name start with 'D'
+        List<String> sName = al.stream().filter(i -> i.startsWith("R")).collect(Collectors.toList());
+        System.out.println("Start name with List: " + sName);
         // check length
         List<String> st = al.stream().filter(s -> s.length() >= 8).collect(Collectors.toList());
         System.out.println(st);
