@@ -7,13 +7,13 @@ public class FindAllSubString {
     public static void main(String[] args) {
         String a = "zyzyzyz";
 
-        ArrayList<String> a1 = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < a.length(); i++) {
             for (int j = i + 1; j <= a.length(); j++) {
                 if (i != j)
-                    a1.add(a.substring(i, j));
+                    list.add(a.substring(i, j));
             }
         }
-        System.out.println(a1);
+        System.out.println(list);
     }
 }

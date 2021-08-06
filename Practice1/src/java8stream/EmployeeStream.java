@@ -50,6 +50,10 @@ public class EmployeeStream {
                                                         .collect(Collectors.toList());
         System.out.println(employeesSortedList1);
 
+        List<EmployeeStream> employeesSortedList3 = list.stream().sorted((o1, o2) -> (o2.geteSalary() - o1.geteSalary())).distinct()
+                                                        .collect(Collectors.toList());
+        System.out.println("Emp: " + employeesSortedList3);
+
         List<EmployeeStream> salaryValue = list.stream().filter(abc -> abc.geteSalary() > 30000).collect(Collectors.toList());
         System.out.println(salaryValue);
 
